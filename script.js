@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // console.log(taskText);
 
         if(taskText === "") return;
-
         const newTask = {
             id : Date.now(),
             text: taskText,
@@ -24,11 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTask(newTask);
         todoInput.value = "";   //clear input
 
-
         // console.log(tasks);
-
     })
-
 
     function renderTask(task){
         // console.log(task);
@@ -56,11 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
             saveTasks();
         });
 
-
-
         todoList.appendChild(li);
     }
-
 
     // add and update these values saved into localstorage
     function saveTasks(){
